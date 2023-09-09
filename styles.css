@@ -1,0 +1,45 @@
+.loop03 {
+    /* padding-top: 20px; */
+    padding-bottom: 10px;
+    overflow: hidden;
+}
+.loop03__box {
+    display: flex;
+    width: 100%;
+    padding-top: 5px;
+    padding-bottom: 5px;
+    background-color: #190000;
+}
+.loop03__item {
+    flex: 0 0 auto;
+    font-size: 20px;
+    white-space: nowrap;
+    padding-right: 25px;
+    padding-left: 25px;
+    color: #FFA000;
+}
+
+.loop03__item:nth-child(odd) {
+    animation: loop 50s -25s linear infinite;
+}
+.loop03__item:nth-child(even) {
+    animation: loop2 50s linear infinite;
+}
+
+@keyframes loop {
+    0% {
+        transform: translateX(100%);
+    }
+    to {
+        transform: translateX(-100%);
+    }
+}
+
+@keyframes loop2 {
+    0% {
+        transform: translateX(0);
+    }
+    to {
+        transform: translateX(-200%);
+    }
+}
