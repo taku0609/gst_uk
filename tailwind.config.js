@@ -17,7 +17,7 @@ tailwind.config = {
                 }
             },
             animation: {
-                'fade-in-down': 'fade-in-down 2.5s ease-out'
+                'fade-in-down': 'fade-in-down 1.5s ease-out'
             }
         },
     },
